@@ -1,46 +1,92 @@
-# Getting Started with Create React App
+# 🎮 EPLAY - Loja de Jogos
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Uma aplicação web moderna de e-commerce especializada em jogos, desenvolvida como projeto educativo durante o curso da EBAC (Escola Britânica de Artes Criativas e Tecnologia).
 
-## Available Scripts
+## 🚀 Sobre o Projeto
 
-In the project directory, you can run:
+EPLAY é uma plataforma completa de venda de jogos digitais que oferece uma experiência de usuário fluida e moderna. O projeto foi desenvolvido com foco em boas práticas de desenvolvimento front-end, arquitetura componentizada e design responsivo.
 
-### `npm start`
+### ✨ Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- 🏠 **Página Inicial**: Banner de destaque e seções de promoções e lançamentos
+- 🎯 **Catálogo de Produtos**: Listagem completa de jogos com filtros
+- 🔍 **Detalhes do Produto**: Página individual com galeria, descrição e informações
+- 🛒 **Carrinho de Compras**: Sistema completo de carrinho com Redux
+- 💳 **Checkout**: Formulário de finalização com validação e múltiplas formas de pagamento
+- 📱 **Design Responsivo**: Interface adaptável para todos os dispositivos
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm test`
+### Core
+- **React** - Biblioteca principal para construção da UI
+- **TypeScript** - Superset JavaScript com tipagem estática
+- **React Router DOM** - Roteamento e navegação entre páginas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Estado e Dados
+- **Redux Toolkit** - Gerenciamento de estado global
+- **RTK Query** - Fetch de dados e cache automático
+- **React Redux** - Conectar React com Redux
 
-### `npm run build`
+### Estilização
+- **Styled Components** - CSS-in-JS com componentes estilizados
+- **Design System** - Paleta de cores e componentes consistentes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Formulários e Validação
+- **Formik** - Gerenciamento de formulários
+- **Yup** - Validação de esquemas
+- **React Input Mask** - Máscaras para inputs
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Estrutura do Projeto
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+src/
+├── components/          # Componentes reutilizáveis
+│   ├── Banner/         # Banner principal com destaque
+│   ├── Button/         # Botão customizado
+│   ├── Card/           # Card container
+│   ├── Cart/           # Carrinho de compras
+│   ├── Footer/         # Rodapé
+│   ├── Gallery/        # Galeria de imagens/vídeos
+│   ├── Header/         # Cabeçalho e navegação
+│   ├── Hero/           # Seção hero
+│   ├── Loader/         # Indicador de carregamento
+│   ├── Product/        # Card do produto
+│   ├── ProductsList/   # Lista de produtos
+│   ├── Section/        # Seção genérica
+│   └── Tag/            # Etiquetas e badges
+├── pages/              # Páginas da aplicação
+│   ├── Home/           # Página inicial
+│   ├── Categories/     # Categorias de jogos
+│   ├── Product/        # Detalhes do produto
+│   └── Checkout/       # Finalização da compra
+├── services/           # Serviços e APIs
+│   └── api.ts          # Configuração RTK Query
+├── store/              # Configuração Redux
+├── assets/             # Imagens e recursos estáticos
+├── styles.ts           # Estilos globais e tema
+└── routes.tsx          # Configuração de rotas
+```
 
-### `npm run eject`
+## 🔌 API e Endpoints
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+O projeto consome uma API REST com os seguintes endpoints:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `GET /destaque` - Jogo em destaque
+- `GET /promocoes` - Jogos em promoção
+- `GET /em-breve` - Jogos em lançamento
+- `GET /categorias` - Categorias disponíveis
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**Base URL**: `https://api-ebac.vercel.app/api/eplay`
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## 🎯 Recursos Educativos
 
-## Learn More
+Este projeto foi desenvolvido como parte do aprendizado em:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Arquitetura de Componentes React**
+- **Gerenciamento de Estado com Redux**
+- **Roteamento SPA com React Router**
+- **Styled Components e CSS-in-JS**
+- **Formulários e Validação**
+- **Consumo de APIs REST**
+- **TypeScript em projetos React**
+- **Testes automatizados**
